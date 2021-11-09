@@ -3,30 +3,60 @@
     font-family: 'logoFont';
     src: url('./DancingScript-Bold.ttf') format('woff');
     font-weight: 600;  
+    font-style: normal;   
+}
+
+@font-face {
+
+    font-family: 'navLinksFont';
+    src: url('./CrimsonPro-Regular.ttf') format('woff');
+    font-weight: 600;  
     font-style: normal;
+    
 }
 
 #navBar{    
     min-width: 100%;
-    min-height: 300px;
+    min-height: 100px;
     background-color: rgb(28, 78, 78);
     position: sticky;
     top: 0;
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; */
-    /* padding: 1.5rem 2rem; */
+    display: flex;
+    flex-flow: column;
+    /* justify-content: space-between;
+    padding: 1.5rem 2rem; */
   
 }
 
 #logo{
-    font-size: 260px;
+    font-size: 100px;
     color: rgb(195, 235, 248);
-    padding-bottom: 40px;
+    /* padding-bottom: 10px; */
     text-align: center;
     font-family: 'logoFont';
 }
 
+#navList{
+    color: rgb(195, 235, 248);
+    display: flex;
+    flex-flow: row;
+    margin: auto;
+}
+
+.navLink{
+    text-decoration: none;
+    font-family: 'navLinksFont';
+    font-size: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
 #content{
     
+}
+
+#backgroundImage{
+
 }
