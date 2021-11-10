@@ -1,7 +1,7 @@
 import './style.css';
-import HomeImage from './home1.jpg';
-
-console.log('You got webpack working! Wow!')
+import { homeTabClicked } from './home';
+import { menuTabClicked } from './menu';
+import { aboutUsTabClicked } from './aboutus';
 
 // Title of the current page
 document.title = "Cafe Bonat"
@@ -22,35 +22,31 @@ navList.setAttribute("id", "navList");
 // navList.textContent= "DELETE MEEEEEEEE!!!!!!!";
 navBar.appendChild(navList);
 
+//creating the content div that stores the current layout of the page
+let content = document.getElementById("content");
+
+//creates the 'home' tab
 let homeLink = document.createElement("div");
 homeLink.setAttribute("id", "homeLink");
 homeLink.textContent = "|Home|";
-// homeLink.setAttribute("href", "file:///home/kasey/GitProjects/the_odin_project/Restaurant/dist/index.html");
 homeLink.classList.add("navLink");
+homeLink.addEventListener("click", homeTabClicked);
 navList.appendChild(homeLink);
 
+//creates the 'menu' tab
 let menuLink = document.createElement("div");
 menuLink.textContent = "|Menu|";
-// menuLink.setAttribute("href", "file:///home/kasey/GitProjects/the_odin_project/Restaurant/dist/index.html");
 menuLink.classList.add("navLink");
+menuLink.addEventListener("click", menuTabClicked);
 navList.appendChild(menuLink);
 
+//creates the 'about us' tab
 let aboutUsLink = document.createElement("div");
 aboutUsLink.textContent = "|About Us|";
-// aboutUsLink.setAttribute("href", "file:///home/kasey/GitProjects/the_odin_project/Restaurant/dist/index.html");
 aboutUsLink.classList.add("navLink");
+aboutUsLink.addEventListener("click", aboutUsTabClicked);
 navList.appendChild(aboutUsLink);
 
-
-
-//creating the content div that stores the current layout of the page
-let content = document.createElement("div");
-content.setAttribute("id", "content");
-// document.getElementById("content").classList.add("content");
-
-//creating the homepage image
-const myPicture = new Image();
-myPicture.src = HomeImage;
-content.appendChild(myPicture);
+homeTabClicked();
 
 document.body.appendChild(content);
