@@ -1,4 +1,4 @@
-import AboutUsImage from './cupobeans.jpeg'
+import Image from './cupobeans.jpeg'
 
 function aboutUsTabClicked(){
     document.body.scrollTop = document.documentElement.scrollTop = 0;
@@ -6,9 +6,9 @@ function aboutUsTabClicked(){
     let contentABoutUs = document.getElementById("content");
     contentABoutUs.textContent = "";
     //creating the About us background image
-    const myPicture = new Image();
-    myPicture.src = AboutUsImage;
-    contentABoutUs.appendChild(myPicture);
+    let aboutUsBackgroundImage = document.createElement("div")
+    aboutUsBackgroundImage.setAttribute("id", "aboutUsBackgroundImage");
+    contentABoutUs.appendChild(aboutUsBackgroundImage);
     console.log("About Us Module worked");
 }
 

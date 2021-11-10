@@ -35,6 +35,7 @@ navList.appendChild(homeLink);
 
 //creates the 'menu' tab
 let menuLink = document.createElement("div");
+menuLink.setAttribute("id", "menuLink");
 menuLink.textContent = "|Menu|";
 menuLink.classList.add("navLink");
 menuLink.addEventListener("click", menuTabClicked);
@@ -42,6 +43,7 @@ navList.appendChild(menuLink);
 
 //creates the 'about us' tab
 let aboutUsLink = document.createElement("div");
+aboutUsLink.setAttribute("id", "aboutUsLink");
 aboutUsLink.textContent = "|About Us|";
 aboutUsLink.classList.add("navLink");
 aboutUsLink.addEventListener("click", aboutUsTabClicked);

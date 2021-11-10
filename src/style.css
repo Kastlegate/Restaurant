@@ -16,16 +16,20 @@
     
 }
 
+
+
 #navBar{    
     min-width: 100%;
-    min-height: 100px;
+    min-height: 15%;
     background-color: rgb(28, 78, 78);
     position: sticky;
     top: 0;
     display: flex;
     flex-flow: column;
+    z-index: 1;
     /* justify-content: space-between;
     padding: 1.5rem 2rem; */
+    position: fixed;
   
 }
 
@@ -50,14 +54,55 @@
     font-size: 20px;
     margin-left: 20px;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 
 
 #content{
+    /* margin: 0;
+    padding: 0; */
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+#pageBackgroundImage{
+    background: url('./home1.jpg');
+    height: inherit;
+    width: inherit;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    position: fixed;
+}
+
+#menuBackgroundImage{
+    background: url('./menu2.jpg');
+    height: inherit;
+    width: inherit;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    position: fixed;
+}
+
+#aboutUsBackgroundImage{
+    background: url('./cupobeans.jpeg');
+    height: inherit;
+    width: inherit;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    position: fixed;
+}
+
+body{
+    
+    height: 99%;
+    width: 99%;
+    
     
 }
 
-#backgroundImage{
-
-}
