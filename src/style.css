@@ -16,11 +16,9 @@
     
 }
 
-
-
 #navBar{    
     min-width: 100%;
-    min-height: 15%;
+    min-height: 1%;
     background-color: rgb(28, 78, 78);
     position: sticky;
     top: 0;
@@ -34,11 +32,14 @@
 }
 
 #logo{
-    font-size: 70px;
+    font-size: 600%;
     color: rgb(195, 235, 248);
     /* padding-bottom: 10px; */
     text-align: center;
     font-family: 'logoFont';
+    padding: none;
+    margin: auto;
+    
 }
 
 #navList{
@@ -46,12 +47,13 @@
     display: flex;
     flex-flow: row;
     margin: auto;
+    max-height: 20%;
 }
 
 .navLink{
     text-decoration: none;
     font-family: 'navLinksFont';
-    font-size: 20px;
+    font-size: 150%;
     margin-left: 20px;
     margin-right: 20px;
     cursor: pointer;
@@ -60,12 +62,10 @@
 
 
 #content{
-    /* margin: 0;
-    padding: 0; */
     top: 0;
     height: 100%;
     width: 100%;
-    z-index: 0;
+    z-index: 0;    
 }
 
 #pageBackgroundImage{
@@ -86,6 +86,7 @@
     background-repeat: no-repeat; 
     background-size: cover;
     position: fixed;
+    
 }
 
 #aboutUsBackgroundImage{
@@ -99,10 +100,9 @@
 }
 
 body{
-    
-    height: 99%;
-    width: 99%;
-    
-    
+    padding-left: -100px;
+    height: 100%;
+    width: 100%;
+    margin: auto;
 }
 
