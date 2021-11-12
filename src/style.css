@@ -9,7 +9,7 @@
 /* Font for the navigation Options */
 @font-face {
 
-    font-family: 'navLinksFont';
+    font-family: 'plainFont';
     src: url('./CrimsonPro-Regular.ttf') format('woff');
     font-weight: 600;  
     font-style: normal;
@@ -21,7 +21,6 @@
     min-height: 1%;
     background-color: rgb(28, 78, 78);
     position: sticky;
-    /* top: 0; */
     display: flex;
     flex-flow: column;
     /* z-index: 1; */
@@ -33,7 +32,7 @@
 
 #logo{
     font-size: 500%;
-    color: rgb(195, 235, 248);
+    color: rgb(250, 252, 130);
     /* padding-bottom: 10px; */
     text-align: center;
     font-family: 'logoFont';
@@ -47,13 +46,11 @@
     display: flex;
     flex-flow: row;
     margin: auto;
-    /* max-height: 20%; */
-
 }
 
 .navLink{
     text-decoration: none;
-    font-family: 'navLinksFont';
+    font-family: 'plainFont';
     font-size: 120%;
     margin-left: 20px;
     margin-right: 20px;
@@ -61,7 +58,8 @@
 }
 
 #content{
-    /* top: 0; */
+    position: relative;
+    top: 50px;
     height: 100%;
     width: 100%;
     z-index: 0;  
@@ -71,15 +69,32 @@
 
 #mainContent{
     width: 50%;
-    height: fit-content;
-    background-color: ivory;
+    text-align: center;
+    font-size: 300%;
+    /* height: fit-content; */
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 0;
     margin: auto;
     position: relative;
-    /* top: 50px; */
-    /* bottom: 50px; */
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    border-radius: 25px 25px 25px 25px;
+    font-family: 'plainFont';
+    margin-bottom: 20px;
 }
 
+#introductionImage{
+    /* border-radius: 200px 200px 200px 200px; */
+    /* padding-top: 50px; */
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    
+}
+
+
+/* background images for each tab */
 #pageBackgroundImage{
     background: url('./home1.jpg');
     height: inherit;
@@ -118,8 +133,9 @@
     width: 100%;
     color: rgb(195, 235, 248);
     text-align: center;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
+    font-family: 'plainFont';
 }
 
 body{
