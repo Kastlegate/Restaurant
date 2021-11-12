@@ -66,7 +66,7 @@
     display: flex;
     flex-direction: column;  
 }
-
+/* css for the main content div of all 3 tabs */
 #mainContent{
     width: 50%;
     text-align: center;
@@ -89,10 +89,56 @@
     /* padding-top: 50px; */
     height: 50%;
     width: 50%;
+    margin: auto;    
+}
+/* Menu settings for the Menu Tab */
+#menuContainer{
+    width: 90%;
+    /* margin-top: 50px; */
     margin: auto;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: 1 1 160px;     */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+        row-gap: 4rem;
+        column-gap: 4rem;
+    /* align-items: center; */
+    /* animation: fadeIn 1.5s; */
     
 }
 
+.menuBanner{
+    font-family: 'logoFont';
+    width: 50%;
+    color: rgb(250, 252, 130);
+    /* background-color: rgb(28, 78, 78, 0.2); */
+    margin: auto;
+}
+
+.menuItem{
+    width: 75px;
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 125px;
+padding: 4rem;
+cursor: pointer;
+background-color: white;
+transition: background-color 0.3s;
+margin: auto;
+    
+}
+
+.menuText{
+
+}
+
+/* box-sizing: border-box; */
 
 /* background images for each tab */
 #pageBackgroundImage{
@@ -131,11 +177,13 @@
 #footer{
     background-color: rgb(28, 78, 78);
     width: 100%;
+    height: fit-content;
     color: rgb(195, 235, 248);
     text-align: center;
-    /* position: fixed; */
+    position: relative;
     bottom: 0;
     font-family: 'plainFont';
+
 }
 
 body{

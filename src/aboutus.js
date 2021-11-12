@@ -15,7 +15,7 @@ function aboutUsTabClicked(){
     //creating the pages footer
     let footer = document.createElement("div");
     footer.id = "footer";
-    footer.textContent = "Design by Kastlegate";
+    footer.textContent = "\u00A9 2021 Kastlegate Designs";
     thisContent.appendChild(footer);
     
     if (document.body.hasChildNodes()) {
