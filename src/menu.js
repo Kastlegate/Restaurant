@@ -4,9 +4,12 @@ function menuTabClicked(){
     let contentMenu = document.getElementById("content");
     contentMenu.textContent = "";
     //creating the homepage image
+    if (document.body.hasChildNodes()) {
+        document.body.removeChild(document.body.childNodes[0]);
+      } 
     let menuBackgroundImage = document.createElement("div")
     menuBackgroundImage.setAttribute("id", "menuBackgroundImage");
-    contentMenu.appendChild(menuBackgroundImage);
+    document.body.insertBefore(menuBackgroundImage, navBar);
     console.log("Menu Module worked");
 }
 

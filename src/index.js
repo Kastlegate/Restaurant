@@ -9,7 +9,6 @@ document.title = "Cafe Bonat"
 //creating the Navigation Bar 
 let navBar = document.createElement("div");
 navBar.setAttribute("id", "navBar")
-document.body.appendChild(navBar);
 
 //creating the logo and adding it to the navigation bar
 let logo = document.createElement("div");
@@ -24,6 +23,8 @@ navBar.appendChild(navList);
 
 //creating the content div that stores the current layout of the page
 let content = document.getElementById("content");
+document.body.insertBefore(navBar, content);
+
 
 //creates the 'home' tab
 let homeLink = document.createElement("div");
@@ -49,6 +50,7 @@ aboutUsLink.classList.add("navLink");
 aboutUsLink.addEventListener("click", aboutUsTabClicked);
 navList.appendChild(aboutUsLink);
 
+// calling the home page function for the initial pageload
 homeTabClicked();
 
-document.body.appendChild(content);
+// document.body.appendChild(content);
