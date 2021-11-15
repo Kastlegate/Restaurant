@@ -3,6 +3,12 @@ import Image2 from './gumbo.jpg';
 import Image3 from './muffaletta.jpg';
 import Image4 from './cafeaulait.jpg';
 import Image5 from './latte.jpg';
+import Image6 from './tea.jpg';
+import Image7 from './italianSoda.jpg';
+import Image8 from './blueStallion.jpg';
+import Image9 from './ethereal.png';
+import Image10 from './westsixth.jpg';
+import Image11 from './lexBrew.jpg';
 
 function menuTabClicked(){
     document.body.scrollTop = document.documentElement.scrollTop = 0;
@@ -24,78 +30,83 @@ function menuTabClicked(){
 
     //Menu Divider
 
-    let menuDivider1 = document.createElement("div")
-    menuDivider1.id = "menuDivider-1"
-    menuDivider1.classList.add("menuDivider");
-    mainContent.appendChild(menuDivider1);
+    let menuDivider = document.createElement("div")
+    menuDivider.id = "menuDivider"
+    menuDivider.classList.add("menuDivider");
+    mainContent.appendChild(menuDivider);
 
     //container to hold each menu item's div
     let menuContainer = document.createElement("div");
     menuContainer.id = "menuContainer";
+    menuContainer.classList.add("menuContainer");
     mainContent.appendChild(menuContainer)
     
-    // Divs for each item on the menu
+    
 
-    //The food inside the menu. Beignets, gumbo, and muffaletta
-    let menuItem1 = document.createElement("div")
-    menuItem1.id = "menuItem1";
-    menuItem1.classList.add("menuItem");
-    let menuItem1Image = document.createElement("img");
-    menuItem1Image.classList.add('menuImage');
-    menuItem1Image.src = Image1;
-    menuItem1.appendChild(menuItem1Image);
-    let menuDivider2 = document.createElement("div")
-    menuDivider2.id = "menuDivider-2"
-    menuDivider2.classList.add("menuDivider");
-    let menuItem1Text = document.createElement("div");
-    menuItem1Text.textContent = "Beignets\r\n 3.99";
-    menuItem1Text.classList.add("menuText");
-    menuItem1.appendChild(menuItem1Text);
-    menuContainer.appendChild(menuItem1);
-    menuItem1.appendChild(menuDivider2);  
+    //the divs and images for each food inside the menu. Beignets, gumbo, and muffaletta
+    // Beignets
+    let beignets = document.createElement("div")
+    beignets.id = "beignets";
+    beignets.classList.add("menuItem");
+    let beignetsImage = document.createElement("img");
+    beignetsImage.classList.add('menuImage');
+    beignetsImage.src = Image1;
+    beignetsImage.alt = "Beignets";
+    beignets.appendChild(beignetsImage);
+    let beignetsDivider = document.createElement("div")
+    beignetsDivider.id = "beignetsDivider"
+    beignetsDivider.classList.add("menuDivider");
+    let beignetsText = document.createElement("div");
+    beignetsText.textContent = "Beignets\r\n 3.99";
+    beignetsText.classList.add("menuText");
+    beignets.appendChild(beignetsText);
+    menuContainer.appendChild(beignets);
+    beignets.appendChild(beignetsDivider);  
     // gumbo
-    let menuItem2 = document.createElement("div")
-    menuItem2.id = "menuItem2";
-    menuItem2.classList.add("menuItem");
-    let menuItem2Image = document.createElement("img");
-    menuItem2Image.classList.add('menuImage');
-    menuItem2Image.src = Image2;
-    menuItem2.appendChild(menuItem2Image);
-    let menuDivider3 = document.createElement("div")
-    menuDivider3.id = "menuDivider-3"
-    menuDivider3.classList.add("menuDivider");
-    let menuItem2Text = document.createElement("div");
-    menuItem2Text.textContent = "Chicken Andouille Gumbo\r\n Cup 4.99 Bowl 9.99";
-    menuItem2Text.classList.add("menuText");
-    menuItem2.appendChild(menuItem2Text);
-    menuContainer.appendChild(menuItem2);
-    menuItem2.appendChild(menuDivider3);
+    let gumbo = document.createElement("div")
+    gumbo.id = "gumbo";
+    gumbo.classList.add("menuItem");
+    let gumboImage = document.createElement("img");
+    gumboImage.classList.add('menuImage');
+    gumboImage.src = Image2;
+    gumboImage.alt = "Gumbo"
+    gumbo.appendChild(gumboImage);
+    let gumboDivider = document.createElement("div")
+    gumboDivider.id = "gumboDivider"
+    gumboDivider.classList.add("menuDivider");
+    let gumboText = document.createElement("div");
+    gumboText.textContent = "Chicken Andouille Gumbo\r\n Cup 4.99 Bowl 9.99";
+    gumboText.classList.add("menuText");
+    gumbo.appendChild(gumboText);
+    menuContainer.appendChild(gumbo);
+    gumbo.appendChild(gumboDivider);
     //muffaletta
-    let menuItem3 = document.createElement("div")
-    menuItem3.id = "menuItem3";
-    menuItem3.classList.add("menuItem");
-    let menuItem3Image = document.createElement("img");
-    menuItem3Image.classList.add('menuImage');
-    menuItem3Image.src = Image3;
-    menuItem3.appendChild(menuItem3Image);
-    let menuDivider4 = document.createElement("div")
-    menuDivider4.id = "menuDivider-4"
-    let menuItem3Text = document.createElement("div");
-    menuItem3Text.textContent = "Muffaletta\r\n 9.99";
-    menuItem3Text.classList.add("menuText");
-    menuItem3.appendChild(menuItem3Text);
-    menuContainer.appendChild(menuItem3);
-    menuDivider4.classList.add("menuDivider");
-    menuItem3.appendChild(menuDivider4);  
+    let muffaletta = document.createElement("div")
+    muffaletta.id = "muffaletta";
+    muffaletta.classList.add("menuItem");
+    let muffalettaImage = document.createElement("img");
+    muffalettaImage.classList.add('menuImage');
+    muffalettaImage.src = Image3;
+    muffalettaImage.alt = "muffaletta";
+    muffaletta.appendChild(muffalettaImage);
+    let muffalettaDivider = document.createElement("div")
+    muffalettaDivider.id = "muffalettaDivider"
+    let muffalettaText = document.createElement("div");
+    muffalettaText.textContent = "Muffaletta\r\n 9.99";
+    muffalettaText.classList.add("menuText");
+    muffaletta.appendChild(muffalettaText);
+    menuContainer.appendChild(muffaletta);
+    muffalettaDivider.classList.add("menuDivider");
+    // muffaletta.appendChild(muffalettaDivider);  
 
     // Menu Banner for the coffee
     let menuCoffee = document.createElement("div")
-    menuCoffee.id = "coffee";
+    menuCoffee.id = "menuCoffee";
     menuCoffee.classList.add("menuBanner");
-    menuCoffee.textContent = "Coffee";
+    menuCoffee.textContent = "Coffee and Tea";
     mainContent.appendChild(menuCoffee);
 
-    //coffee Divider
+    //coffee and tea Divider
     let coffeeDivider = document.createElement("div")
     coffeeDivider.id = "coffeeDivider"
     coffeeDivider.classList.add("menuDivider");
@@ -103,44 +114,169 @@ function menuTabClicked(){
 
     // Container for the coffee divs
     let coffeeMenuContainer = document.createElement("div");
-    coffeeMenuContainer.id = "menuContainer";
+    coffeeMenuContainer.id = "coffeeMenuContainer";
+    coffeeMenuContainer.classList.add("menuContainer");
     mainContent.appendChild(coffeeMenuContainer)
 
     // Cafe Au Lait
-    let menuItem4 = document.createElement("div")
-    menuItem4.id = "menuItem4";
-    menuItem4.classList.add("menuItem");
-    let menuItem4Image = document.createElement("img");
-    menuItem4Image.classList.add('menuImage');
-    menuItem4Image.src = Image4;
-    menuItem4.appendChild(menuItem4Image);
-    let menuDivider5 = document.createElement("div")
-    menuDivider5.id = "menuDivider-5"; 
-    menuDivider5.classList.add("menuDivider"); 
-    let menuItem4Text = document.createElement("div");
-    menuItem4Text.textContent = "Cafe Au Lait\r\n Hot or Iced";
-    menuItem4Text.classList.add("menuText");
-    menuItem4.appendChild(menuItem4Text);
-    coffeeMenuContainer.appendChild(menuItem4);
-    menuItem4.appendChild(menuDivider5);  
+    let cafeAuLait = document.createElement("div")
+    cafeAuLait.id = "cafeAuLait";
+    cafeAuLait.classList.add("menuItem");
+    let cafeAuLaitImage = document.createElement("img");
+    cafeAuLaitImage.classList.add('menuImage');
+    cafeAuLaitImage.src = Image4;
+    cafeAuLaitImage.alt = "Cafe Au Lait";
+    cafeAuLait.appendChild(cafeAuLaitImage);
+    let cafeAuLaitDivider = document.createElement("div")
+    cafeAuLaitDivider.id = "cafeAuLaitDivider"; 
+    cafeAuLaitDivider.classList.add("menuDivider"); 
+    let cafeAuLaitText = document.createElement("div");
+    cafeAuLaitText.textContent = "Cafe Au Lait\r\n Hot or Iced\r\n3.99";
+    cafeAuLaitText.classList.add("menuText");
+    cafeAuLait.appendChild(cafeAuLaitText);
+    coffeeMenuContainer.appendChild(cafeAuLait);
+    cafeAuLait.appendChild(cafeAuLaitDivider);  
 
-    // Latte
-    let menuItem5 = document.createElement("div")
-    menuItem5.id = "menuItem5";
-    menuItem5.classList.add("menuItem");
-    let menuItem5Image = document.createElement("img");
-    menuItem5Image.classList.add('menuImage');
-    menuItem5Image.src = Image5;
-    menuItem5.appendChild(menuItem5Image);
-    let menuDivider6 = document.createElement("div")
-    menuDivider6.id = "menuDivider-6"; 
-    menuDivider6.classList.add("menuDivider"); 
-    let menuItem5Text = document.createElement("div");
-    menuItem5Text.textContent = "Latte\r\n Hazelnut, Vannilla, Caramel";
-    menuItem5Text.classList.add("menuText");
-    menuItem5.appendChild(menuItem5Text);
-    coffeeMenuContainer.appendChild(menuItem5);
-    menuItem5.appendChild(menuDivider6);  
+    // latte
+    let latte = document.createElement("div")
+    latte.id = "latte";
+    latte.classList.add("menuItem");
+    let latteImage = document.createElement("img");
+    latteImage.classList.add('menuImage');
+    latteImage.src = Image5;
+    latteImage.alt = "Latte";
+    latte.appendChild(latteImage);
+    let latteDivider = document.createElement("div")
+    latteDivider.id = "latteDivider"; 
+    latteDivider.classList.add("menuDivider"); 
+    let latteText = document.createElement("div");
+    latteText.textContent = "Latte\r\nHazelnut, Vannilla, Caramel\r\n4.99";
+    latteText.classList.add("menuText");
+    latte.appendChild(latteText);
+    coffeeMenuContainer.appendChild(latte);
+    latte.appendChild(latteDivider);  
+
+    // Teas
+    let tea = document.createElement("div")
+    tea.id = "tea";
+    tea.classList.add("menuItem");
+    let teaImage = document.createElement("img");
+    teaImage.classList.add('menuImage');
+    teaImage.src = Image6;
+    teaImage.alt = "Tea";
+    tea.appendChild(teaImage);
+    let teaDivider = document.createElement("div")
+    teaDivider.id = "teaDivider"; 
+    teaDivider.classList.add("menuDivider"); 
+    let teaText = document.createElement("div");
+    teaText.textContent = "Tea\r\nEarl Grey, Green Tea, Black\r\n3";
+    teaText.classList.add("menuText");
+    tea.appendChild(teaText);
+    coffeeMenuContainer.appendChild(tea);
+    // tea.appendChild(teaDivider);
+    
+    // italian soda
+    let italianSoda = document.createElement("div")
+    italianSoda.id = "italianSoda";
+    italianSoda.classList.add("menuItem");
+    let italianSodaImage = document.createElement("img");
+    italianSodaImage.classList.add('menuImage');
+    italianSodaImage.src = Image7;
+    italianSodaImage.alt = "Italian Soda";
+    italianSoda.appendChild(italianSodaImage);
+    let italianSodaDivider = document.createElement("div")
+    italianSodaDivider.id = "italianSodaDivider"; 
+    italianSodaDivider.classList.add("menuDivider"); 
+    let italianSodaText = document.createElement("div");
+    italianSodaText.textContent = "Italian Soda\r\nVarious Flavors\r\n4.50";
+    italianSodaText.classList.add("menuText");
+    italianSoda.appendChild(italianSodaText);
+    coffeeMenuContainer.appendChild(italianSoda);
+    // italianSoda.appendChild(italianSodaDivider);  
+
+    // Menu Banner for the local Beers
+    let menuBeers = document.createElement("div")
+    menuBeers.id = "Beers Menu";
+    menuBeers.classList.add("menuBanner");
+    menuBeers.textContent = "Local Draft Beer";
+    mainContent.appendChild(menuBeers);
+
+    //Beer
+    let BeersDivider = document.createElement("div")
+    BeersDivider.id = "BeersDivider"
+    BeersDivider.classList.add("menuDivider");
+    mainContent.appendChild(BeersDivider);
+
+    let beerPrices = document.createElement("div");
+    beerPrices.id = "beerPrices";
+    beerPrices.textContent = "4.99";
+    mainContent.appendChild(beerPrices);
+
+    // Container for the Beer divs
+    let beersMenuContainer = document.createElement("div");
+    beersMenuContainer.id = "BeersMenuContainer";
+    beersMenuContainer.classList.add("menuContainer");
+    mainContent.appendChild(beersMenuContainer)
+
+    // Blue Stallion
+    let blueStallion = document.createElement("div")
+    blueStallion.id = "blueStallion";
+    blueStallion.classList.add("menuItem");
+    let blueStallionImage = document.createElement("img");
+    blueStallionImage.classList.add('menuImage');
+    blueStallionImage.src = Image8;
+    blueStallionImage.alt = "blueStallion";
+    blueStallion.appendChild(blueStallionImage);
+    // let blueStallionText = document.createElement("div");
+    // blueStallionText.textContent = "Blue Stallion";
+    // blueStallionText.classList.add("menuText");
+    // blueStallion.appendChild(blueStallionText);
+    beersMenuContainer.appendChild(blueStallion);
+    
+    // Ethereal
+    let ethereal = document.createElement("div")
+    ethereal.id = "ethereal";
+    ethereal.classList.add("menuItem");
+    let etherealImage = document.createElement("img");
+    etherealImage.classList.add('menuImage');
+    etherealImage.src = Image9;
+    etherealImage.alt = "ethereal";
+    ethereal.appendChild(etherealImage);
+    // let etherealText = document.createElement("div");
+    // etherealText.textContent = "Ethereal";
+    // etherealText.classList.add("menuText");
+    // ethereal.appendChild(etherealText);
+    beersMenuContainer.appendChild(ethereal); 
+
+    // West Sixth
+    let westSixth = document.createElement("div")
+    westSixth.id = "westSixth";
+    westSixth.classList.add("menuItem");
+    let westSixthImage = document.createElement("img");
+    westSixthImage.classList.add('menuImage');
+    westSixthImage.src = Image10;
+    westSixthImage.alt = "westSixth";
+    westSixth.appendChild(westSixthImage);
+    // let westSixthText = document.createElement("div");
+    // westSixthText.textContent = "West Sixth";
+    // westSixthText.classList.add("menuText");
+    // westSixth.appendChild(westSixthText);
+    beersMenuContainer.appendChild(westSixth);
+
+    // Blue Stallion
+    let lexingtonBrewery = document.createElement("div")
+    lexingtonBrewery.id = "lexingtonBrewery";
+    lexingtonBrewery.classList.add("menuItem");
+    let lexingtonBreweryImage = document.createElement("img");
+    lexingtonBreweryImage.classList.add('menuImage');
+    lexingtonBreweryImage.src = Image11;
+    lexingtonBreweryImage.alt = "lexingtonBrewery";
+    lexingtonBrewery.appendChild(lexingtonBreweryImage);
+    // let lexingtonBreweryText = document.createElement("div");
+    // lexingtonBreweryText.textContent = "Lexington Brewing and Distillery Co.";
+    // lexingtonBreweryText.classList.add("menuText");
+    // lexingtonBrewery.appendChild(lexingtonBreweryText);
+    beersMenuContainer.appendChild(lexingtonBrewery); 
 
     //creating the pages footer
     let footer = document.createElement("div");

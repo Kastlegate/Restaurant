@@ -83,6 +83,7 @@
     border-radius: 25px 25px 25px 25px;
     font-family: 'plainFont';
     margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 #introductionImage{
@@ -93,7 +94,7 @@
     margin: auto;    
 }
 /* Menu settings for the Menu Tab */
-#menuContainer{
+.menuContainer{
     width: 90%;
     margin: auto;
     display: grid;
@@ -106,7 +107,7 @@
 
 .menuBanner{
     font-family: 'logoFont';
-    width: 50%;
+    width: 100%;
     color: rgb(250, 252, 130);
     /* background-color: rgb(28, 78, 78, 0.2); */
     margin: auto;
@@ -151,6 +152,12 @@
     font-size: 50%;
     width: 200%;
     white-space: pre-line;
+}
+
+#beerPrices{
+    font-family: 'plainFont';
+    color: white;
+    font-size: 50%;
 }
 
 /* box-sizing: border-box; */
