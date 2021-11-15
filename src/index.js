@@ -50,6 +50,16 @@ aboutUsLink.classList.add("navLink");
 aboutUsLink.addEventListener("click", aboutUsTabClicked);
 navList.appendChild(aboutUsLink);
 
+// let footer = document.createElement("div");
+//     footer.id = "footer";
+//     // let footerText = document.createElement("p");
+//     // footerText.id = "footerText";
+//     // footerText.textContent = "\u00A9 2021 Kastlegate Designs"    
+//     // footer.textContent = "\u00A9 2021 Kastlegate Designs";
+//     // footer.appendChild(footerText);
+//     document.body.appendChild(footer);
+
+
 // calling the home page function for the initial pageload
 homeTabClicked();
 

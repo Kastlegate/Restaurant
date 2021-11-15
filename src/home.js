@@ -34,10 +34,10 @@ function homeTabClicked(){
 
 
 
-    //creating the pages footer
+    // creating the pages footer
     let footer = document.createElement("div");
     footer.id = "footer";
-    footer.textContent = "\u00A9 2021 Kastlegate Designs";
+    footer.textContent = "\u00A9 2021 Kasey Martin";
     thisContent.appendChild(footer);
 
     //checking for and removing a preexisting background if one exists.

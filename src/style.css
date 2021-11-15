@@ -154,6 +154,24 @@
     white-space: pre-line;
 }
 
+.aboutUsImage{
+    border-radius: 25px 25px 25px 25px;
+    height: 15rem;
+    width: 15rem;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.aboutUsText{
+    top: 0;
+    font-family: 'plainFont';
+    color: white;
+    font-size: 50%;
+    width: 80%;
+    margin: auto;
+    white-space: pre-line;
+}
+
 #beerPrices{
     font-family: 'plainFont';
     color: white;
@@ -200,13 +218,14 @@
     background-color: rgb(28, 78, 78);
     width: 100%;
     height: fit-content;
-    color: rgb(195, 235, 248);
+    color: rgb(255, 255, 255);
     text-align: center;
     position: relative;
     bottom: 0;
     font-family: 'plainFont';
-
 }
+
+
 
 body{
     /* padding-left: -100px; */
