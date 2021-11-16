@@ -15,7 +15,7 @@
     font-style: normal;
     
 }
-
+/* div for the navigation tabs */
 #navBar{    
     min-width: 100%;
     min-height: 1%;
@@ -29,7 +29,7 @@
     /* position: fixed; */
   
 }
-
+/* Logo inside the navbar */
 #logo{
     font-size: 500%;
     color: rgb(250, 252, 130);
@@ -40,7 +40,7 @@
     margin: auto;
     
 }
-
+/* container for the navigation tabs */
 #navList{
     color: rgb(195, 235, 248);
     display: flex;
@@ -56,7 +56,7 @@
     margin-right: 20px;
     cursor: pointer;
 }
-
+/* div to hold each pages content */
 #content{
     position: relative;
     top: 50px;
@@ -85,7 +85,7 @@
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
-
+/* image for the home/landing page */
 #introductionImage{
     /* border-radius: 200px 200px 200px 200px; */
     /* padding-top: 50px; */
@@ -93,7 +93,7 @@
     width: 50%;
     margin: auto;    
 }
-/* Menu settings for the Menu Tab */
+/* settings for the Menu Tab */
 .menuContainer{
     width: 90%;
     margin: auto;
@@ -125,7 +125,6 @@
 }
 
 .menuItem{
-    /* border-radius: 25px 25px 25px 25px; */
     width: fit-content;
     display: flex;
     flex-direction: column;
@@ -134,7 +133,6 @@
     height: 100%;
     padding: 10px;
     cursor: pointer;
-    /* background-color: rgb(53, 53, 53, .4); */
     margin: auto;    
 }
 
@@ -154,6 +152,13 @@
     white-space: pre-line;
 }
 
+#beerPrices{
+    font-family: 'plainFont';
+    color: white;
+    font-size: 50%;
+}
+
+/* settings for the about us Tab */
 .aboutUsImage{
     border-radius: 25px 25px 25px 25px;
     height: 15rem;
@@ -166,19 +171,42 @@
     top: 0;
     font-family: 'plainFont';
     color: white;
-    font-size: 50%;
+    font-size: 60%;
     width: 80%;
     margin: auto;
     white-space: pre-line;
 }
 
-#beerPrices{
-    font-family: 'plainFont';
-    color: white;
-    font-size: 50%;
+#contactUsContainer{
+    height: fit-content;
+    width: 80%;
+    margin-right: 10px;
 }
 
-/* box-sizing: border-box; */
+#contactUsInfo{
+    height: 10rem;
+    padding: 8px;
+    top: 0;
+    text-align: left;
+    font-family: 'plainFont';
+    color: white;
+    font-size: 42%;
+    width: 93%;
+    margin: auto;
+    white-space: pre-line;
+    /* border: 1px solid grey; */
+    background-color: rgba(22, 22, 22, 0.5);
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: inset 0px 0px 2px #c7c7c7;
+}
+
+#aboutUsContainer{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+}
 
 /* background images for each tab */
 #pageBackgroundImage{
@@ -228,9 +256,9 @@
 
 
 body{
-    /* padding-left: -100px; */
     height: 100%;
     width: 100%;
     margin: auto;
+     /* box-sizing: content-box; */
 }
 

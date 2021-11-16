@@ -24,17 +24,16 @@ function aboutUsTabClicked(){
     mainContent.appendChild(menuDivider);
 
 
-  let aboutUsInfo = document.createElement("div");
-    aboutUsInfo.id = "About Us"
-    aboutUsInfo.classList.add("aboutUsText");
-    aboutUsInfo.textContent = "Founded in 1987 by Kendal Bonat, she brought her passion for New" 
+  let aboutUs = document.createElement("div");
+    aboutUs.id = "About Us"
+    aboutUs.classList.add("aboutUsText");
+    aboutUs.textContent = "Founded in 1987 by Kendal Bonat, she brought her passion for New" 
      + " Orleans culture to Kentucky.";
-    mainContent.appendChild(aboutUsInfo);
+    mainContent.appendChild(aboutUs);
 
     // Container for the contact divs
     let aboutUsContainer = document.createElement("div");
     aboutUsContainer.id = "aboutUsContainer";
-    aboutUsContainer.classList.add("menuContainer");
     mainContent.appendChild(aboutUsContainer);
 
     let aboutUsImage = document.createElement("img");
@@ -43,11 +42,30 @@ function aboutUsTabClicked(){
     aboutUsImage.alt = "aboutUs";
     aboutUsContainer.appendChild(aboutUsImage);
 
+    //Contact Us info container
+
+    let contactUsContainer = document.createElement("div")
+    contactUsContainer.id = "contactUsContainer";
+    aboutUsContainer.appendChild(contactUsContainer)
+
+    let contactUs = document.createElement("div");
+    contactUs.id = "contactUs";
+    contactUs.classList.add("aboutUsText");
+    contactUs.textContent = "Contact Us";
+    contactUsContainer.appendChild(contactUs);
+
+    // //Divider
+    // let Divider = document.createElement("div")
+    // Divider.id = "Divider"
+    // Divider.classList.add("menuDivider");
+    // contactUsContainer.appendChild(Divider);
+
+
     let contactUsInfo = document.createElement("div");
-    contactUsInfo.id = "About Us"
-    contactUsInfo.classList.add("aboutUsText");
-    contactUsInfo.textContent = "Phone: 555-867-5309\r\nEmail: Kastlegate@cafeBonat.com\r\nAddress: 1234 Bourbon and Toulouse Street";
-    aboutUsContainer.appendChild(contactUsInfo);
+    contactUsInfo.id = "contactUsInfo";    
+    contactUsInfo.textContent += "\r\nPhone: 555-867-5309\r\nEmail: Kastlegate@cafeBonat.com\r\n\r\nAddress: "
+    + "1234 Bourbon and Toulouse Street, Lexington, Kentucky, 40505.";
+    contactUsContainer.appendChild(contactUsInfo);
 
 
 
