@@ -23,17 +23,14 @@
     position: sticky;
     display: flex;
     flex-flow: column;
-    /* z-index: 1; */
-    /* justify-content: space-between;
-    padding: 1.5rem 2rem; */
-    /* position: fixed; */
+    /* z-index: 1;
+    position: fixed; */
   
 }
 /* Logo inside the navbar */
 #logo{
     font-size: 500%;
     color: rgb(250, 252, 130);
-    /* padding-bottom: 10px; */
     text-align: center;
     font-family: 'logoFont';
     padding: none;
@@ -48,17 +45,37 @@
     display: flex;
     flex-flow: row;
     margin: auto;
+    height: 30px;    
 }
 
 .navLink{
     text-decoration: none;
+    height: fit-content;
+    width: fit-content;
     font-family: 'plainFont';
     font-size: 120%;
     margin-left: 20px;
     margin-right: 20px;
-    cursor: pointer;
-    transition: margin-right 2s;
+    cursor: pointer;    
 }
+/* little animation for clicking a tab */
+.tabClickedAnimation{
+    transition-duration: 5s;
+    border-bottom: solid 1px rgb(207, 241, 252);
+    animation: tabClicked .5s;
+}
+
+@keyframes tabClicked{
+    0% {
+        color: rgb(207, 241, 252);        
+    }
+
+    100%{
+        color: rgb(250, 250, 250);        
+    }
+}
+
+
 /* div to hold each pages content */
 #content{
     position: relative;
@@ -72,10 +89,8 @@
 /* css for the main content div of all 3 tabs */
 #mainContent{
     width: 600px;
-    /* max-width: 100%; */
     text-align: center;
     font-size: 300%;
-    /* height: fit-content; */
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 0;
     margin: auto;
@@ -89,7 +104,7 @@
     padding-bottom: 20px;
     animation: fadeEffect 1s;
 }
-
+/* Animation for the fade effect when loading each tab */
 @keyframes fadeEffect {
     0% {
       opacity: .5;
@@ -102,12 +117,11 @@
 
 /* image for the home/landing page */
 #introductionImage{
-    /* border-radius: 200px 200px 200px 200px; */
-    /* padding-top: 50px; */
     height: 50%;
     width: 50%;
     margin: auto;    
 }
+
 /* settings for the Menu Tab */
 .menuContainer{
     width: 90%;
@@ -209,7 +223,6 @@
     width: 93%;
     margin: auto;
     white-space: pre-line;
-    /* border: 1px solid grey; */
     background-color: rgba(22, 22, 22, 0.5);
     border-radius: 25px 25px 25px 25px;
     box-shadow: inset 0px 0px 2px #c7c7c7;
@@ -275,6 +288,5 @@ body{
     height: 100%;
     width: 100%;
     margin: auto;
-    /* box-sizing: border-box; */
 }
 

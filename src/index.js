@@ -25,29 +25,60 @@ navBar.appendChild(navList);
 let content = document.getElementById("content");
 document.body.insertBefore(navBar, content);
 
+function tabClicked(){
+    let home = document.getElementById("homeLink");
+    let menu = document.getElementById("menuLink");
+    let aboutUs = document.getElementById("aboutUsLink");
+
+    if(home.classList.contains("tabClickedAnimation")){
+        console.log("friggin fraggin");
+        home.classList = "";
+        home.classList = "navLink"
+    }
+
+    else if(menu.classList.contains("tabClickedAnimation")){
+        console.log("friggin fraggin");
+        menu.classList = "";
+        menu.classList = "navLink"
+    }
+
+    else if(aboutUs.classList.contains("tabClickedAnimation")){
+        console.log("friggin fraggin");
+        aboutUs.classList = "";
+        aboutUs.classList = "navLink"
+    }
+    
+    this.classList.add("tabClickedAnimation");
+}
 
 //creates the 'home' tab
 let homeLink = document.createElement("div");
 homeLink.setAttribute("id", "homeLink");
-homeLink.textContent = "|Home|";
+homeLink.textContent = "Home";
 homeLink.classList.add("navLink");
+homeLink.classList.add("tabClickedAnimation")
 homeLink.addEventListener("click", homeTabClicked);
+
+homeLink.addEventListener("click", tabClicked);
+
 navList.appendChild(homeLink);
 
 //creates the 'menu' tab
 let menuLink = document.createElement("div");
 menuLink.setAttribute("id", "menuLink");
-menuLink.textContent = "|Menu|";
+menuLink.textContent = "Menu";
 menuLink.classList.add("navLink");
 menuLink.addEventListener("click", menuTabClicked);
+menuLink.addEventListener("click", tabClicked);
 navList.appendChild(menuLink);
 
 //creates the 'about us' tab
 let aboutUsLink = document.createElement("div");
 aboutUsLink.setAttribute("id", "aboutUsLink");
-aboutUsLink.textContent = "|About Us|";
+aboutUsLink.textContent = "About Us";
 aboutUsLink.classList.add("navLink");
 aboutUsLink.addEventListener("click", aboutUsTabClicked);
+aboutUsLink.addEventListener("click", tabClicked);
 navList.appendChild(aboutUsLink);
 
 // let footer = document.createElement("div");

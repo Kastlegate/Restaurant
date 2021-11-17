@@ -61,7 +61,8 @@ function menuTabClicked(){
     beignetsText.classList.add("menuText");
     beignets.appendChild(beignetsText);
     menuContainer.appendChild(beignets);
-    beignets.appendChild(beignetsDivider);  
+    beignets.appendChild(beignetsDivider);
+
     // gumbo
     let gumbo = document.createElement("div")
     gumbo.id = "gumbo";
@@ -80,6 +81,7 @@ function menuTabClicked(){
     gumbo.appendChild(gumboText);
     menuContainer.appendChild(gumbo);
     gumbo.appendChild(gumboDivider);
+    
     //muffaletta
     let muffaletta = document.createElement("div")
     muffaletta.id = "muffaletta";
@@ -97,7 +99,7 @@ function menuTabClicked(){
     muffaletta.appendChild(muffalettaText);
     menuContainer.appendChild(muffaletta);
     muffalettaDivider.classList.add("menuDivider");
-    // muffaletta.appendChild(muffalettaDivider);  
+  
 
     // Menu Banner for the coffee
     let menuCoffee = document.createElement("div")
@@ -173,7 +175,7 @@ function menuTabClicked(){
     teaText.classList.add("menuText");
     tea.appendChild(teaText);
     coffeeMenuContainer.appendChild(tea);
-    // tea.appendChild(teaDivider);
+
     
     // italian soda
     let italianSoda = document.createElement("div")
@@ -192,7 +194,7 @@ function menuTabClicked(){
     italianSodaText.classList.add("menuText");
     italianSoda.appendChild(italianSodaText);
     coffeeMenuContainer.appendChild(italianSoda);
-    // italianSoda.appendChild(italianSodaDivider);  
+  
 
     // Menu Banner for the local Beers
     let menuBeers = document.createElement("div")
@@ -227,10 +229,6 @@ function menuTabClicked(){
     blueStallionImage.src = Image8;
     blueStallionImage.alt = "blueStallion";
     blueStallion.appendChild(blueStallionImage);
-    // let blueStallionText = document.createElement("div");
-    // blueStallionText.textContent = "Blue Stallion";
-    // blueStallionText.classList.add("menuText");
-    // blueStallion.appendChild(blueStallionText);
     beersMenuContainer.appendChild(blueStallion);
     
     // Ethereal
@@ -242,10 +240,6 @@ function menuTabClicked(){
     etherealImage.src = Image9;
     etherealImage.alt = "ethereal";
     ethereal.appendChild(etherealImage);
-    // let etherealText = document.createElement("div");
-    // etherealText.textContent = "Ethereal";
-    // etherealText.classList.add("menuText");
-    // ethereal.appendChild(etherealText);
     beersMenuContainer.appendChild(ethereal); 
 
     // West Sixth
@@ -257,10 +251,6 @@ function menuTabClicked(){
     westSixthImage.src = Image10;
     westSixthImage.alt = "westSixth";
     westSixth.appendChild(westSixthImage);
-    // let westSixthText = document.createElement("div");
-    // westSixthText.textContent = "West Sixth";
-    // westSixthText.classList.add("menuText");
-    // westSixth.appendChild(westSixthText);
     beersMenuContainer.appendChild(westSixth);
 
     // Blue Stallion
@@ -272,10 +262,6 @@ function menuTabClicked(){
     lexingtonBreweryImage.src = Image11;
     lexingtonBreweryImage.alt = "lexingtonBrewery";
     lexingtonBrewery.appendChild(lexingtonBreweryImage);
-    // let lexingtonBreweryText = document.createElement("div");
-    // lexingtonBreweryText.textContent = "Lexington Brewing and Distillery Co.";
-    // lexingtonBreweryText.classList.add("menuText");
-    // lexingtonBrewery.appendChild(lexingtonBreweryText);
     beersMenuContainer.appendChild(lexingtonBrewery); 
 
     //creating the pages footer
