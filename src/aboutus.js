@@ -63,7 +63,7 @@ function aboutUsTabClicked(){
 
     let contactUsInfo = document.createElement("div");
     contactUsInfo.id = "contactUsInfo";    
-    contactUsInfo.textContent += "\r\nPhone: 555-867-5309\r\nEmail: Kastlegate@cafeBonat.com\r\n\r\nAddress: "
+    contactUsInfo.textContent += "\r\nPhone: +5-555-867-5309\r\nEmail: Kastlegate@cafeBonat.com\r\n\r\nAddress: "
     + "1234 Bourbon and Toulouse Street, Lexington, Kentucky, 40505.";
     contactUsContainer.appendChild(contactUsInfo);
 

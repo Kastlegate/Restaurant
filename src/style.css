@@ -40,6 +40,8 @@
     margin: auto;
     
 }
+
+
 /* container for the navigation tabs */
 #navList{
     color: rgb(195, 235, 248);
@@ -55,6 +57,7 @@
     margin-left: 20px;
     margin-right: 20px;
     cursor: pointer;
+    transition: margin-right 2s;
 }
 /* div to hold each pages content */
 #content{
@@ -84,7 +87,19 @@
     font-family: 'plainFont';
     margin-bottom: 20px;
     padding-bottom: 20px;
+    animation: fadeEffect 1s;
 }
+
+@keyframes fadeEffect {
+    0% {
+      opacity: .5;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
 /* image for the home/landing page */
 #introductionImage{
     /* border-radius: 200px 200px 200px 200px; */
@@ -200,6 +215,7 @@
     box-shadow: inset 0px 0px 2px #c7c7c7;
 }
 
+
 #aboutUsContainer{
     width: 100%;
     margin: auto;
@@ -221,7 +237,7 @@
 }
 
 #menuBackgroundImage{
-    background: url('./menu2.jpg');
+    background: url('./home1.jpg');
     height: inherit;
     width: inherit;
     background-position: center; 
@@ -232,7 +248,7 @@
 }
 
 #aboutUsBackgroundImage{
-    background: url('./cupobeans.jpeg');
+    background: url('./home1.jpg');
     height: inherit;
     width: inherit;
     background-position: center; 
@@ -259,6 +275,6 @@ body{
     height: 100%;
     width: 100%;
     margin: auto;
-     /* box-sizing: content-box; */
+    /* box-sizing: border-box; */
 }
 
